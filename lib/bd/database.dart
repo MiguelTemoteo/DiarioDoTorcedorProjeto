@@ -29,6 +29,8 @@ class Database {
       detalhesExtras: 'No Allianz Parque, o Palmeiras enfrenta o Juventude, buscando consolidar sua liderança. No Maracanã, o Flamengo se prepara para um duelo emocionante contra o Grêmio, com ambos os times em boa fase. Em São Januário, o Vasco da Gama recebe o Atlético Mineiro, enquanto o Cuiabá tenta surpreender o São Paulo na Arena Pantanal. Por fim, no Estádio Beira-Rio, o Internacional enfrenta o Corinthians em um clássico que promete muitas emoções. Fique ligado nos horários e não perca esses grandes confrontos!',
     ),
   ];
+
+
   static List<Contato> contatos = [
     Contato(
       title: 'E-mail',
