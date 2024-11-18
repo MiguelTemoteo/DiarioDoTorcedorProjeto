@@ -1,13 +1,25 @@
 class PacoteFutebol {
-  final String urlImage;
-  final String titulo;
-  final String descricao;
-  final String detalhesExtras;
+  late int id;
+  late String urlImage;
+  late String titulo;
+  late String descricao;
+  late String detalhesExtras;
 
   PacoteFutebol({
-    required this.urlImage,
     required this.titulo,
+    required this.urlImage,
     required this.descricao,
     required this.detalhesExtras, 
   });
+
+  PacoteFutebol.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    titulo = json['titulo'];
+    urlImage = json['urlimage'];
+    descricao = json['descricao'];
+    detalhesExtras = json['detalhesextras'];
+
+
+  }
+
 }

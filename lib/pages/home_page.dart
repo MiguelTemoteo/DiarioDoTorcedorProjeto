@@ -1,4 +1,6 @@
 import 'package:aula_913/bd/database.dart';
+import 'package:aula_913/bd/db_helper.dart';
+import 'package:aula_913/bd/pacote_dao.dart';
 import 'package:aula_913/domain/pacote_futebol.dart';
 import 'package:aula_913/widgets/card_pacote_futebol.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +15,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<PacoteFutebol> pacotes = [];
   @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+  loadData() async {
+    pacotes = await PacoteDao().listarPacotes();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

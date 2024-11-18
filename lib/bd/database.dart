@@ -3,7 +3,7 @@ import 'package:aula_913/domain/contato.dart';
 
 class Database {
   
-  static List<PacoteFutebol> pacotes = [
+  static List pacotes = [
     PacoteFutebol(
       urlImage: 'https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0725%2Fr1202072_1280x720_16%2D9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg',
       titulo: 'Jogos Olímpicos de Paris',
