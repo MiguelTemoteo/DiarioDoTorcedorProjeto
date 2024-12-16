@@ -21,5 +21,16 @@ class PacoteFutebol {
 
 
   }
+    Map<String, dynamic> toJson() {
+    Map<String, dynamic> json = {};
+
+    json['id'] = id;
+    json['titulo'] = titulo;
+    json['urlImage'] = urlImage;
+    json['descricao'] = descricao;
+    json['detalhesExtras'] = detalhesExtras;
+
+    return json;
+  }
 
 }
